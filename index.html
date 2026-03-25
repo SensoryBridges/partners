@@ -1,0 +1,1060 @@
+<!DOCTYPE html>
+<!-- saved from url=(0084)file:///C:/Users/qxb843/Downloads/brooks-band-partner-ecosystem-financial-model.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Brooks Band™ — Partner Ecosystem &amp; Financial Model</title>
+<link href="./index_files/css2" rel="stylesheet">
+<style>
+:root{--ink:#0b0b10;--paper:#faf8f4;--cream:#f0ece2;--slate:#1e2130;--teal:#1a9e8e;--teal-glow:#22cbb8;--gold:#c5a044;--rose:#c44d5a;--violet:#7c4dbe;--blue:#3064b8;--green:#2d8c50;--amber:#d68a18;--border:rgba(12,12,18,0.07)}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:'DM Sans',sans-serif;background:var(--paper);color:var(--ink);line-height:1.6;-webkit-font-smoothing:antialiased}
+.hdr{background:var(--slate);padding:40px 36px 32px;color:#fff;position:relative;overflow:hidden}
+.hdr::after{content:'';position:absolute;top:0;right:0;width:50%;height:100%;background:radial-gradient(ellipse at 80% 40%,rgba(26,158,142,0.06),transparent 70%);pointer-events:none}
+.ey{font-family:'JetBrains Mono',monospace;font-size:9px;letter-spacing:3px;text-transform:uppercase;color:var(--teal);margin-bottom:10px}
+.hdr h1{font-family:'Syne',sans-serif;font-size:clamp(22px,3.5vw,34px);font-weight:800;line-height:1.15;margin-bottom:8px}
+.hdr h1 em{font-style:normal;color:var(--teal-glow)}
+.hdr .sub{font-size:12px;color:rgba(255,255,255,0.45);font-weight:300;max-width:720px}
+.main{max-width:1280px;margin:0 auto;padding:36px 28px 80px}
+.sec{margin-bottom:52px}
+.sn{font-family:'JetBrains Mono',monospace;font-size:9px;letter-spacing:2.5px;text-transform:uppercase;color:var(--teal);margin-bottom:4px}
+.st{font-family:'Syne',sans-serif;font-size:20px;font-weight:700;color:var(--slate);margin-bottom:4px}
+.sd{font-size:12px;color:#888;font-weight:300;max-width:720px;margin-bottom:24px}
+
+/* TABS */
+.tabs{display:flex;gap:4px;margin-bottom:20px;flex-wrap:wrap}
+.tab{font-family:'JetBrains Mono',monospace;font-size:10px;letter-spacing:1px;text-transform:uppercase;padding:8px 16px;border-radius:6px;background:#fff;border:1px solid var(--border);cursor:pointer;color:#888;transition:all 0.2s}
+.tab.active{background:var(--slate);color:var(--teal-glow);border-color:var(--slate)}
+.tab:hover{border-color:var(--teal)}
+.tab-content{display:none}.tab-content.active{display:block}
+
+/* PARTNER ECOSYSTEM DIAGRAM */
+.eco-diagram{background:var(--slate);border-radius:16px;padding:36px;position:relative;overflow:hidden}
+.eco-diagram::before{content:'';position:absolute;inset:0;background:radial-gradient(circle at 50% 50%,rgba(26,158,142,0.04),transparent 60%);pointer-events:none}
+.eco-center{text-align:center;margin-bottom:28px}
+.eco-logo{font-family:'Syne',sans-serif;font-size:20px;font-weight:800;color:#fff;display:inline-block;padding:14px 28px;border:2px solid var(--teal);border-radius:14px;background:rgba(26,158,142,0.08)}
+.eco-logo em{color:var(--teal-glow);font-style:normal}
+.eco-sub{font-size:10px;color:rgba(255,255,255,0.4);margin-top:8px}
+
+.eco-ring{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-top:20px}
+.eco-slot{background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.07);border-radius:12px;padding:16px;text-align:center;transition:all 0.3s;cursor:pointer;position:relative}
+.eco-slot:hover{background:rgba(255,255,255,0.06);border-color:rgba(26,158,142,0.3);transform:translateY(-3px)}
+.eco-slot.open{background:rgba(26,158,142,0.06);border-color:var(--teal)}
+.eco-icon{font-size:24px;margin-bottom:6px}
+.eco-name{font-family:'Syne',sans-serif;font-size:12px;font-weight:700;color:#fff;margin-bottom:3px}
+.eco-type{font-family:'JetBrains Mono',monospace;font-size:8px;letter-spacing:1px;text-transform:uppercase;padding:2px 7px;border-radius:3px;display:inline-block;margin-bottom:6px}
+.eco-type.data{background:rgba(48,100,184,0.2);color:#6da4e8}
+.eco-type.content{background:rgba(124,77,190,0.2);color:#a78bdb}
+.eco-type.hw{background:rgba(26,158,142,0.2);color:var(--teal-glow)}
+.eco-type.service{background:rgba(197,160,68,0.2);color:#e0c870}
+.eco-type.clinical{background:rgba(196,77,90,0.2);color:#e88a94}
+.eco-desc{font-size:9px;color:rgba(255,255,255,0.4);line-height:1.5}
+.eco-rev{font-family:'JetBrains Mono',monospace;font-size:8px;color:var(--teal-glow);margin-top:6px;padding-top:6px;border-top:1px solid rgba(255,255,255,0.05)}
+
+/* Expanded partner detail */
+.eco-detail{display:none;background:rgba(0,0,0,0.2);border-radius:8px;padding:12px;margin-top:10px;text-align:left}
+.eco-slot.open .eco-detail{display:block}
+.eco-detail p{font-size:9px;color:rgba(255,255,255,0.5);line-height:1.6;margin-bottom:4px}
+.eco-detail .cite{font-size:7.5px;color:rgba(255,255,255,0.25);font-style:italic;margin-top:4px}
+
+/* META COMPARISON */
+.meta-compare{display:grid;grid-template-columns:1fr 60px 1fr;gap:0;align-items:start;margin-top:24px}
+.mc-card{background:#fff;border:1px solid var(--border);border-radius:12px;padding:22px}
+.mc-card h4{font-family:'Syne',sans-serif;font-size:14px;font-weight:700;margin-bottom:4px}
+.mc-card .mc-sub{font-size:10px;color:#999;margin-bottom:12px}
+.mc-card .mc-items{font-size:11px;color:#555;line-height:2}
+.mc-card .mc-items strong{color:var(--slate)}
+.mc-mid{display:flex;flex-direction:column;align-items:center;justify-content:center;padding:20px 0;color:var(--teal);opacity:0.3}
+.mc-mid .arr{font-size:20px}
+
+/* FINANCIAL MODEL */
+.fin-grid{display:grid;gap:12px}
+.fin-card{background:#fff;border:1px solid var(--border);border-radius:14px;overflow:hidden}
+.fin-header{padding:16px 20px;display:flex;justify-content:space-between;align-items:center;cursor:pointer;transition:background 0.2s}
+.fin-header:hover{background:var(--cream)}
+.fin-header h4{font-family:'Syne',sans-serif;font-size:15px;font-weight:700;color:var(--slate)}
+.fin-header .fin-total{font-family:'JetBrains Mono',monospace;font-size:14px;font-weight:700;color:var(--teal)}
+.fin-header .fin-toggle{font-size:16px;color:#ccc;transition:transform 0.3s}
+.fin-card.open .fin-toggle{transform:rotate(180deg);color:var(--teal)}
+.fin-body{max-height:0;overflow:hidden;transition:max-height 0.5s ease}
+.fin-card.open .fin-body{max-height:2000px}
+.fin-inner{padding:0 20px 20px}
+.fin-table{width:100%;border-collapse:collapse;font-size:11px}
+.fin-table th{text-align:left;font-family:'JetBrains Mono',monospace;font-size:8.5px;letter-spacing:1px;text-transform:uppercase;color:#999;padding:8px 10px;border-bottom:2px solid var(--border)}
+.fin-table td{padding:8px 10px;border-bottom:1px solid var(--border);color:#555}
+.fin-table td:last-child{text-align:right;font-family:'JetBrains Mono',monospace}
+.fin-table .highlight{background:rgba(26,158,142,0.04)}
+.fin-table .total-row td{font-weight:700;color:var(--slate);border-top:2px solid var(--teal);border-bottom:none}
+.fin-note{font-size:9px;color:#aaa;margin-top:10px;padding-top:8px;border-top:1px solid var(--border);font-style:italic}
+
+/* SUMMARY BAR */
+.summary-bar{background:var(--slate);border-radius:14px;padding:24px 28px;display:grid;grid-template-columns:repeat(4,1fr);gap:16px;margin-top:20px}
+.sum-item{text-align:center}
+.sum-num{font-family:'Syne',sans-serif;font-size:28px;font-weight:800;color:var(--teal-glow)}
+.sum-label{font-family:'JetBrains Mono',monospace;font-size:8px;letter-spacing:1.5px;text-transform:uppercase;color:rgba(255,255,255,0.4);margin-top:4px}
+
+.lf{margin-top:56px;padding-top:18px;border-top:1px solid var(--border);font-size:9px;color:#bbb;text-align:center;line-height:1.8}
+
+@media(max-width:900px){
+  .eco-ring{grid-template-columns:1fr 1fr}
+  .meta-compare{grid-template-columns:1fr}
+  .mc-mid{flex-direction:row;padding:8px 0}
+  .summary-bar{grid-template-columns:1fr 1fr}
+}
+</style>
+</head>
+<body>
+
+<div class="hdr">
+  <div class="ey">Confidential — Partner Ecosystem &amp; Financial Model</div>
+  <h1>Brooks Band™ <em>Partner Ecosystem</em><br>&amp; Revenue Architecture</h1>
+  <div class="sub">How partners plug into the platform, modeled after Meta's Wearables Device Access Toolkit approach. Includes full financial model with pricing, COGS, margins, and partner revenue share by layer. All unknowns marked [TBD]. Sources cited.</div>
+</div>
+
+<div class="main">
+
+<!-- SECTION 1: META COMPARISON -->
+<div class="sec">
+  <div class="sn">01 — Strategic Analysis: Meta's Partner Model vs. Ours</div>
+  <div class="st">Should We Copy Meta's Top-10 Partner Approach?</div>
+  <div class="sd">Meta limits SDK publishing to "select partners" during preview, with general availability in 2026. They curate a small number of high-visibility integrations (Twitch, Disney, Microsoft Seeing AI, 18Birdies). The question is whether this curated approach or an open marketplace generates more value for Sensory Bridges.</div>
+
+  <div class="meta-compare">
+    <div class="mc-card">
+      <h4 style="color:var(--blue)">Meta's Approach: Curated Select Partners</h4>
+      <div class="mc-sub">Limited SDK preview → select partners only → GA 2026</div>
+      <div class="mc-items">
+        <strong>How it works:</strong> Meta handpicks partners. Twitch, Disney, Microsoft Seeing AI, 18Birdies, Logitech Streamlabs were early access. Each solves a different use case. Partners must apply and be accepted.<br><br>
+        <strong>Why they do it:</strong> Hardware quality control (bad apps drain battery on $799 glasses), brand protection (Meta curates the experience), and creating showcase demos that sell the platform to other developers.<br><br>
+        <strong>Revenue model:</strong> Meta does NOT charge partners for SDK access. Meta sells glasses hardware. Partners drive use cases that sell more glasses. Meta wins on volume, not marketplace fees.<br><br>
+        <strong>NE Low Vision example:</strong> Training company (not a partner with Meta directly) offering $150+ personalized setup sessions for Ray-Ban Meta glasses. They created a service business on top of Meta's hardware without Meta's permission or involvement — pure ecosystem value.
+      </div>
+    </div>
+    <div class="mc-mid"><span class="arr">→</span></div>
+    <div class="mc-card">
+      <h4 style="color:var(--teal)">Recommendation for Sensory Bridges: Hybrid Model</h4>
+      <div class="mc-sub">Curated clinical partners (Year 1) → Open marketplace (Year 2+)</div>
+      <div class="mc-items">
+        <strong>Year 1 (2026–2027): Curated.</strong> Handpick 5–8 clinical partners who extend the platform's value. Each fills a specific gap in the enterprise system. You control the experience, protect IP, and build showcase integrations that sell the platform to school districts.<br><br>
+        <strong>Year 2+ (2028+): Open marketplace.</strong> Publish partner API documentation. Revenue share model: Sensory Bridges takes 15–20% of partner subscription revenue generated through the platform. Partners get distribution to your installed base. You get ecosystem lock-in and passive revenue.<br><br>
+        <strong>Why this is better than pure Meta-style:</strong> Meta can afford to give away the SDK because they make margin on $799 hardware. You can't — your hardware is Samsung's at Phase 1. Your margin is in the platform subscription. Partners that add value to the platform increase willingness-to-pay for the subscription tier, AND generate direct revenue share income.<br><br>
+        <strong>The NE Low Vision lesson:</strong> Someone will build training services around your product whether you partner with them or not. Better to formalize it, take a revenue share, and control the quality.
+      </div>
+    </div>
+  </div>
+  <div style="font-size:9px;color:#aaa;margin-top:12px;text-align:center;font-style:italic">
+    Sources: Meta Wearables Device Access Toolkit FAQ (Dec 2025) · Meta Connect 2025 partner announcements · NE Low Vision training program page · Omdia: "Meta's multi-tiered AI glasses launch aims to capture 80% of market" (2025) · Canalys SaaS 100 Ecosystems: "Leading platforms like Salesforce have 75% partner-driven revenue"
+  </div>
+</div>
+
+<!-- SECTION 2: PARTNER ECOSYSTEM -->
+<div class="sec">
+  <div class="sn">02 — Partner Ecosystem Map</div>
+  <div class="st">Click Any Partner Slot to See Integration Details + Revenue Model</div>
+  <div class="sd">Eight partner integration slots across five categories. Each partner plugs into a specific layer of the enterprise architecture. Partners access data and functionality through the Bridges Partner API (gated by Knox consent architecture).</div>
+
+  <div class="eco-diagram">
+    <div class="eco-center">
+      <div class="eco-logo">Brooks Band™ <em>Platform</em></div>
+      <div class="eco-sub">All partner data flows through Knox-secured consent-gated API · FERPA/COPPA compliant</div>
+    </div>
+
+    <div class="eco-ring" id="partners"><div class="eco-slot">
+    <div class="eco-icon">🗣️</div>
+    <div class="eco-name">SLP AI Software Partner</div>
+    <span class="eco-type clinical">Clinical Integration</span>
+    <div class="eco-desc">Language sample analysis engine (e.g., InnerVoice / Lois Brady). Processes voice metadata from BrooksClip. Auto-generates SLP evaluation reports.</div>
+    <div class="eco-rev">Revenue share: 20% of partner sub to Sensory Bridges. Partner charges $29–$49/mo per clinician.</div>
+    <div class="eco-detail">
+      <p><strong style="color:var(--teal-glow)">How they plug in:</strong></p>
+      <p>Integration point: BrooksClip voice activity metadata (timestamps, duration, amplitude contour) piped via Bridges API to partner's analysis engine. No raw audio transmitted. Partner returns structured language assessment data that populates the IEP documentation platform. Requires: Partner-executed DPA + FERPA addendum.</p>
+      <div class="cite">Source: Lois Brady consultation Mar 24, 2026. InnerVoice AI language analysis platform.</div>
+    </div>
+  </div><div class="eco-slot open">
+    <div class="eco-icon">🎮</div>
+    <div class="eco-name">OT/PT Game Content</div>
+    <span class="eco-type content">Content Partner</span>
+    <div class="eco-desc">Licensed therapeutic game challenges for VoiceGrow avatar. Bilateral coordination, deep breathing sequences, motor planning activities.</div>
+    <div class="eco-rev">Revenue share: 70/30 split (partner/Sensory Bridges). Content priced at $2.99–$9.99 per challenge pack.</div>
+    <div class="eco-detail">
+      <p><strong style="color:var(--teal-glow)">How they plug in:</strong></p>
+      <p>Integration point: VoiceGrow Game Engine API. Partner submits challenge content via Bridges Developer Portal. Content is reviewed for clinical appropriateness by advisory board. Rendered on watch, tablet, or AR glasses. XP earned from challenges flows into the regulation data pipeline.</p>
+      <div class="cite">Source: OT/PT skill-building design from VoiceGrow system architecture (Mar 24, 2026).</div>
+    </div>
+  </div><div class="eco-slot open">
+    <div class="eco-icon">🧘</div>
+    <div class="eco-name">Calming Content Provider</div>
+    <span class="eco-type content">Content Partner</span>
+    <div class="eco-desc">Licensed calming music, guided breathing, sensory regulation audio. Delivered through watch speaker or AR glasses audio. OT-curated playlists.</div>
+    <div class="eco-rev">Revenue share: 70/30 split. Subscription add-on at $4.99/mo per user.</div>
+    <div class="eco-detail">
+      <p><strong style="color:var(--teal-glow)">How they plug in:</strong></p>
+      <p>Integration point: Feedback Layer API. Content triggered by FSM state transitions — when system enters Alert state, calming content plays. Stimulus rotation logic ensures the same content is never played twice consecutively (anti-contamination safeguard per Patent E). Partner provides content library; Sensory Bridges controls delivery logic.</p>
+      <div class="cite">Source: Reinforcer contamination safeguard architecture (Prov E). Lois Brady clinical consultation.</div>
+    </div>
+  </div><div class="eco-slot open">
+    <div class="eco-icon">📊</div>
+    <div class="eco-name">IEP Platform Integration</div>
+    <span class="eco-type data">Data Partner</span>
+    <div class="eco-desc">Bidirectional sync with existing IEP management systems (Frontline/PowerSchool, Goalbook). Auto-populate progress data from wearable sessions.</div>
+    <div class="eco-rev">Enterprise licensing: $5K–$15K/yr per integration partner. Or per-district fee of $500/yr.</div>
+    <div class="eco-detail">
+      <p><strong style="color:var(--teal-glow)">How they plug in:</strong></p>
+      <p>Integration point: Documentation Layer REST API. Brooks Band session data (regulation events, time-in-range, IEP goal progress) formatted to partner's data schema via FHIR-compatible export. Partner's platform displays Brooks Band data alongside other IEP documentation. FERPA consent gate applies — data only flows when parent has authorized the specific integration.</p>
+      <div class="cite">Source: IDEA § 300.320 documentation requirements. Frontline/PowerSchool feature set analysis.</div>
+    </div>
+  </div><div class="eco-slot open">
+    <div class="eco-icon">🥽</div>
+    <div class="eco-name">AR/VR Therapy Platform</div>
+    <span class="eco-type hw">Hardware + Content</span>
+    <div class="eco-desc">Immersive social regulation environments. Avatar transfers from watch to VR. Partner provides VR therapy content; Sensory Bridges provides regulation data layer.</div>
+    <div class="eco-rev">Revenue share: 15% of partner subscription. Partner charges $39–$79/mo for VR therapy access.</div>
+    <div class="eco-detail">
+      <p><strong style="color:var(--teal-glow)">How they plug in:</strong></p>
+      <p>Integration point: Avatar Transfer Protocol (Prov F). VoiceGrow avatar state, XP, and regulation profile exported to partner's VR environment. Child's avatar appears in social skills scenarios calibrated by their real-world regulation data. Requires Ray-Ban Meta Display ($799) or Meta Quest. Meta Wearables Device Access Toolkit SDK for glasses integration. GA publishing expected 2026.</p>
+      <div class="cite">Sources: Meta Wearables Developer FAQ (Dec 2025). Floreo VR ($40/mo autism social skills). Prov F claims.</div>
+    </div>
+  </div><div class="eco-slot open">
+    <div class="eco-icon">📱</div>
+    <div class="eco-name">Parent Companion App</div>
+    <span class="eco-type service">Service Partner</span>
+    <div class="eco-desc">Consumer-facing parent dashboard and coaching. Weekly regulation summaries, milestone celebrations, therapist communication portal.</div>
+    <div class="eco-rev">Included in consumer subscription ($149–$249/yr). Partner develops under contract or revenue share.</div>
+    <div class="eco-detail">
+      <p><strong style="color:var(--teal-glow)">How they plug in:</strong></p>
+      <p>Integration point: Analytics Layer API. Aggregate session data (no raw biometrics) presented in parent-friendly format. VoiceGrow avatar stage visible to parent. IEP goal progress displayed in non-clinical language. Push notifications for milestones ("Brooks stayed in range 80% of the day today!"). COPPA compliance required for any child-linked data.</p>
+      <div class="cite">Source: Sensory Bridges consumer pricing model. COPPA 16 CFR Part 312.</div>
+    </div>
+  </div><div class="eco-slot open">
+    <div class="eco-icon">🏥</div>
+    <div class="eco-name">Medicaid Billing Intermediary</div>
+    <span class="eco-type service">Service Partner</span>
+    <div class="eco-desc">School-based Medicaid billing services. Partner handles claims submission using documentation auto-generated by Brooks Band platform.</div>
+    <div class="eco-rev">Per-claim fee to district (not to Sensory Bridges). Platform value: increases billable sessions → increases platform stickiness.</div>
+    <div class="eco-detail">
+      <p><strong style="color:var(--teal-glow)">How they plug in:</strong></p>
+      <p>Integration point: Documentation Layer export API. Session notes, CPT code-aligned records, and HCBS waiver-formatted documentation exported in partner's required format. Partner submits claims to TennCare MCOs on behalf of the district. Sensory Bridges does NOT bill Medicaid directly and does NOT touch claims money. Value: platform generates the documentation that enables billing, making it indispensable to districts.</p>
+      <div class="cite">Sources: TennCare Billing Manual (Sep 2025). CMS SBS Guide (Mar 2024). CMS TAC deadline Jul 1, 2026.</div>
+    </div>
+  </div><div class="eco-slot open">
+    <div class="eco-icon">📚</div>
+    <div class="eco-name">Training &amp; Certification</div>
+    <span class="eco-type service">Service Partner</span>
+    <div class="eco-desc">Professional development for SLPs, OTs, and educators on Brooks Band deployment. Certification program. (NE Low Vision model applied to assistive tech.)</div>
+    <div class="eco-rev">Revenue share: 20% of training fees to Sensory Bridges. Partner charges $150–$500 per training session.</div>
+    <div class="eco-detail">
+      <p><strong style="color:var(--teal-glow)">How they plug in:</strong></p>
+      <p>Integration point: Not a technical API integration — this is a service partnership. Partner provides personalized setup, configuration training, and ongoing professional development. Modeled after NE Low Vision's Ray-Ban Meta training program ($150+ per session). Sensory Bridges provides training materials, certification curriculum, and approved partner listing on website. Creates an ecosystem of certified deployment specialists who sell the platform for you.</p>
+      <div class="cite">Source: NE Low Vision Ray-Ban Meta training program (nelowvision.com). Meta partner ecosystem model.</div>
+    </div>
+  </div></div>
+  </div>
+</div>
+
+<!-- SECTION 3: FINANCIAL MODEL -->
+<div class="sec">
+  <div class="sn">03 — Financial Model</div>
+  <div class="st">Revenue by Layer — Click to Expand Details</div>
+  <div class="sd">Every dollar traced from source to Sensory Bridges. Hardware, platform subscriptions, consulting, and partner revenue share. COGS and margins shown per stream.</div>
+
+  <!-- Summary bar -->
+  <div class="summary-bar">
+    <div class="sum-item"><div class="sum-num">$27K</div><div class="sum-label">2026 — Pilot Year</div></div>
+    <div class="sum-item"><div class="sum-num">$112K</div><div class="sum-label">2027 — Year 1 Commercial</div></div>
+    <div class="sum-item"><div class="sum-num">$620K</div><div class="sum-label">2028 — Year 2 Growth</div></div>
+    <div class="sum-item"><div class="sum-num">$2M+</div><div class="sum-label">2029 — Platform + FDA</div></div>
+  </div>
+
+  <div class="fin-grid" id="financials" style="margin-top:20px"><div class="fin-card open">
+    <div class="fin-header" onclick="this.parentElement.classList.toggle(&#39;open&#39;)">
+      <h4>Hardware Revenue (Device Sales)</h4>
+      <div style="display:flex;align-items:center;gap:12px">
+        <span class="fin-total">$249–$279 per unit</span>
+        <span class="fin-toggle">▼</span>
+      </div>
+    </div>
+    <div class="fin-body">
+      <div class="fin-inner">
+        <table class="fin-table">
+          <thead><tr><th>Item</th><th>SKU</th><th>Samsung Cost</th><th>Sell Price</th><th>Margin</th><th>Notes</th></tr></thead>
+          <tbody>
+            <tr class=""><td>Galaxy Watch 8 40mm (BT)</td><td>School SKU</td><td>$349</td><td>$249</td><td>-$100 loss</td><td>Subsidized by platform sub</td></tr><tr class=""><td>Galaxy Watch 8 44mm (LTE)</td><td>School + LTE</td><td>$399</td><td>$279</td><td>-$120 loss</td><td>Knox Freestanding requires LTE</td></tr><tr class=""><td>BrooksClip™ prototype</td><td>UTC R&amp;D</td><td>[TBD]</td><td>Bundled</td><td>—</td><td>Included with device in pilot</td></tr><tr class="highlight"><td>Consumer bundle (watch + clip)</td><td>Direct</td><td>$349+</td><td>$279</td><td>[TBD]</td><td>Consumer margin improves at scale</td></tr>
+          </tbody>
+        </table>
+        <div class="fin-note">Phase 1 hardware margin is negative. This is intentional — hardware is the distribution vehicle for the platform subscription, which is the recurring revenue driver. Comparable model: Revibe sells Galaxy Watch 7 for $199 and charges subscription on top. Source: Samsung.com pricing July 2025.</div>
+      </div>
+    </div>
+  </div><div class="fin-card open">
+    <div class="fin-header" onclick="this.parentElement.classList.toggle(&#39;open&#39;)">
+      <h4>Platform Subscription Revenue (Recurring)</h4>
+      <div style="display:flex;align-items:center;gap:12px">
+        <span class="fin-total">Primary revenue driver</span>
+        <span class="fin-toggle">▼</span>
+      </div>
+    </div>
+    <div class="fin-body">
+      <div class="fin-inner">
+        <table class="fin-table">
+          <thead><tr><th>Tier</th><th>Price</th><th>Unit</th><th>Annual Rev</th><th>Gross Margin</th><th>Notes</th></tr></thead>
+          <tbody>
+            <tr class=""><td>School Purchase Tier</td><td>$59/student/yr</td><td>50 students</td><td>$2,950/yr</td><td>~85% margin</td><td>District buys device outright</td></tr><tr class=""><td>School Managed Rental</td><td>$99/student/yr</td><td>50 students</td><td>$4,950/yr</td><td>~75% margin</td><td>Includes device lease + support</td></tr><tr class=""><td>School 3-Year Lease</td><td>$79/student/yr</td><td>50 students</td><td>$3,950/yr</td><td>~80% margin</td><td>Lower rate, longer commitment</td></tr><tr class="highlight"><td>Consumer Subscription</td><td>$149–$249/yr</td><td>Per user</td><td>$149–$249</td><td>~90% margin</td><td>App + dashboard + avatar</td></tr>
+          </tbody>
+        </table>
+        <div class="fin-note">Platform hosting cost: $500–$2K/mo at pilot scale. Customer acquisition cost at pilot: near-zero (waitlist-driven). SaaS gross margins in education vertical average 70–85%. Source: Sensory Bridges business model (sensorybridges.com/business-model).</div>
+      </div>
+    </div>
+  </div><div class="fin-card">
+    <div class="fin-header" onclick="this.parentElement.classList.toggle(&#39;open&#39;)">
+      <h4>Consulting &amp; Pilot Revenue (2026)</h4>
+      <div style="display:flex;align-items:center;gap:12px">
+        <span class="fin-total">~$27K in 2026</span>
+        <span class="fin-toggle">▼</span>
+      </div>
+    </div>
+    <div class="fin-body">
+      <div class="fin-inner">
+        <table class="fin-table">
+          <thead><tr><th>Stream</th><th>Price</th><th>Volume</th><th>2026 Rev</th><th>Margin</th><th>Notes</th></tr></thead>
+          <tbody>
+            <tr class=""><td>Paid pilot flat fee</td><td>$1,500/site</td><td>5 sites</td><td>$7,500</td><td>100%</td><td>No hardware COGS in pilot fee</td></tr><tr class=""><td>Consulting engagements</td><td>$3,000/district</td><td>3 districts</td><td>$9,000</td><td>100%</td><td>AT assessment + deployment planning</td></tr><tr class=""><td>Private clinic pilots</td><td>$2,500/clinic</td><td>2 clinics</td><td>$5,000</td><td>100%</td><td>SLP/OT practice deployments</td></tr><tr class=""><td>Conference speaking</td><td>$1,500/event</td><td>2 events</td><td>$3,000</td><td>100%</td><td>Paid speaking at AT conferences</td></tr><tr class="highlight"><td>Grant-funded R&amp;D</td><td>Variable</td><td>—</td><td>$2,500+</td><td>—</td><td>UTC partnership deliverables</td></tr>
+          </tbody>
+        </table>
+        <div class="fin-note">Consulting revenue is 100% margin (founder's time). This revenue stream scales only with team growth. It is a bridge to recurring platform subscription revenue in 2027.</div>
+      </div>
+    </div>
+  </div><div class="fin-card open">
+    <div class="fin-header" onclick="this.parentElement.classList.toggle(&#39;open&#39;)">
+      <h4>Partner Ecosystem Revenue (2027+)</h4>
+      <div style="display:flex;align-items:center;gap:12px">
+        <span class="fin-total">[TBD — Projections]</span>
+        <span class="fin-toggle">▼</span>
+      </div>
+    </div>
+    <div class="fin-body">
+      <div class="fin-inner">
+        <table class="fin-table">
+          <thead><tr><th>Stream</th><th>Rate</th><th>Estimated Volume (Yr 1)</th><th>Projected Rev</th><th>Margin</th><th>Notes</th></tr></thead>
+          <tbody>
+            <tr class=""><td>Clinical integration rev share</td><td>20% of partner sub</td><td>2 partners @ $29/mo × 50 clinicians</td><td>$6,960/yr</td><td>~95%</td><td>Pure software margin</td></tr><tr class=""><td>Content marketplace rev share</td><td>30% of content sales</td><td>500 challenge packs sold @ $5 avg</td><td>$750/yr</td><td>~95%</td><td>Year 1 marketplace only</td></tr><tr class=""><td>Training certification rev share</td><td>20% of training fees</td><td>100 sessions @ $250 avg</td><td>$5,000/yr</td><td>~95%</td><td>NE Low Vision model</td></tr><tr class=""><td>IEP platform licensing</td><td>$5K–$15K/partner/yr</td><td>1 integration partner</td><td>$5,000–$15,000/yr</td><td>~95%</td><td>Enterprise data partnership</td></tr><tr class="highlight"><td>AR/VR therapy rev share</td><td>15% of partner sub</td><td>[TBD — Phase 2]</td><td>[TBD]</td><td>~95%</td><td>Requires VoiceGrow in production</td></tr>
+          </tbody>
+        </table>
+        <div class="fin-note">Partner revenue is high-margin because Sensory Bridges provides the API infrastructure that already exists as part of the core platform. Incremental cost of supporting a partner integration is near zero. Revenue share rates benchmarked against Apple App Store (30%), Meta (0% — hardware-funded model), and Microsoft Marketplace (3% agency fee). Our 15–20% rate is competitive for a niche vertical platform. Source: Canalys SaaS 100 Ecosystems (2025).</div>
+      </div>
+    </div>
+  </div><div class="fin-card open">
+    <div class="fin-header" onclick="this.parentElement.classList.toggle(&#39;open&#39;)">
+      <h4>Year-by-Year Revenue Summary</h4>
+      <div style="display:flex;align-items:center;gap:12px">
+        <span class="fin-total">$27K → $112K → $620K → $2M+</span>
+        <span class="fin-toggle">▼</span>
+      </div>
+    </div>
+    <div class="fin-body">
+      <div class="fin-inner">
+        <table class="fin-table">
+          <thead><tr><th>Year</th><th>Hardware</th><th>Platform Subs</th><th>Consulting</th><th>Partner + Other</th><th>Total</th></tr></thead>
+          <tbody>
+            <tr class=""><td>2026 (Pilot Year)</td><td>$7,500</td><td>$0</td><td>$19,500</td><td>$0</td><td>$27,000</td></tr><tr class=""><td>2027 (Year 1 Commercial)</td><td>$25,000</td><td>$62,000</td><td>$10,000</td><td>$15,000</td><td>$112,000</td></tr><tr class=""><td>2028 (Year 2 Growth)</td><td>$75,000</td><td>$420,000</td><td>$25,000</td><td>$100,000</td><td>$620,000</td></tr><tr class="highlight"><td>2029 (Platform + FDA)</td><td>$200,000</td><td>$1,200,000</td><td>$50,000</td><td>$550,000</td><td>$2,000,000+</td></tr>
+          </tbody>
+        </table>
+        <div class="fin-note">2026 is a validation year, not a revenue business. 2027 converts pilot schools to paying platform subscribers. 2028 adds consumer SKU and partner ecosystem. 2029 assumes FDA Pre-Sub completed and proprietary hardware in development. All figures are projections based on current pipeline (150+ waitlist, 5 pilot sites confirmed, 300+ discovery interviews). Source: Sensory Bridges financial projections.</div>
+      </div>
+    </div>
+  </div></div>
+</div>
+
+<div class="lf">
+  Confidential — Sensory Bridges, Inc. · All sources cited · Unknowns marked [TBD]<br>
+  Financial projections are forward-looking estimates based on published pricing, discovery interview data, and industry benchmarks.<br>
+  © 2026 Sensory Bridges, Inc.
+</div>
+</div>
+
+<script>
+// === PARTNER DATA ===
+const partners = [
+  {
+    icon:"🗣️",name:"SLP AI Software Partner",type:"clinical",typeName:"Clinical Integration",
+    desc:"Language sample analysis engine (e.g., InnerVoice / Lois Brady). Processes voice metadata from BrooksClip. Auto-generates SLP evaluation reports.",
+    rev:"Revenue share: 20% of partner sub to Sensory Bridges. Partner charges $29–$49/mo per clinician.",
+    detail:"Integration point: BrooksClip voice activity metadata (timestamps, duration, amplitude contour) piped via Bridges API to partner's analysis engine. No raw audio transmitted. Partner returns structured language assessment data that populates the IEP documentation platform. Requires: Partner-executed DPA + FERPA addendum.",
+    cite:"Source: Lois Brady consultation Mar 24, 2026. InnerVoice AI language analysis platform."
+  },
+  {
+    icon:"🎮",name:"OT/PT Game Content",type:"content",typeName:"Content Partner",
+    desc:"Licensed therapeutic game challenges for VoiceGrow avatar. Bilateral coordination, deep breathing sequences, motor planning activities.",
+    rev:"Revenue share: 70/30 split (partner/Sensory Bridges). Content priced at $2.99–$9.99 per challenge pack.",
+    detail:"Integration point: VoiceGrow Game Engine API. Partner submits challenge content via Bridges Developer Portal. Content is reviewed for clinical appropriateness by advisory board. Rendered on watch, tablet, or AR glasses. XP earned from challenges flows into the regulation data pipeline.",
+    cite:"Source: OT/PT skill-building design from VoiceGrow system architecture (Mar 24, 2026)."
+  },
+  {
+    icon:"🧘",name:"Calming Content Provider",type:"content",typeName:"Content Partner",
+    desc:"Licensed calming music, guided breathing, sensory regulation audio. Delivered through watch speaker or AR glasses audio. OT-curated playlists.",
+    rev:"Revenue share: 70/30 split. Subscription add-on at $4.99/mo per user.",
+    detail:"Integration point: Feedback Layer API. Content triggered by FSM state transitions — when system enters Alert state, calming content plays. Stimulus rotation logic ensures the same content is never played twice consecutively (anti-contamination safeguard per Patent E). Partner provides content library; Sensory Bridges controls delivery logic.",
+    cite:"Source: Reinforcer contamination safeguard architecture (Prov E). Lois Brady clinical consultation."
+  },
+  {
+    icon:"📊",name:"IEP Platform Integration",type:"data",typeName:"Data Partner",
+    desc:"Bidirectional sync with existing IEP management systems (Frontline/PowerSchool, Goalbook). Auto-populate progress data from wearable sessions.",
+    rev:"Enterprise licensing: $5K–$15K/yr per integration partner. Or per-district fee of $500/yr.",
+    detail:"Integration point: Documentation Layer REST API. Brooks Band session data (regulation events, time-in-range, IEP goal progress) formatted to partner's data schema via FHIR-compatible export. Partner's platform displays Brooks Band data alongside other IEP documentation. FERPA consent gate applies — data only flows when parent has authorized the specific integration.",
+    cite:"Source: IDEA § 300.320 documentation requirements. Frontline/PowerSchool feature set analysis."
+  },
+  {
+    icon:"🥽",name:"AR/VR Therapy Platform",type:"hw",typeName:"Hardware + Content",
+    desc:"Immersive social regulation environments. Avatar transfers from watch to VR. Partner provides VR therapy content; Sensory Bridges provides regulation data layer.",
+    rev:"Revenue share: 15% of partner subscription. Partner charges $39–$79/mo for VR therapy access.",
+    detail:"Integration point: Avatar Transfer Protocol (Prov F). VoiceGrow avatar state, XP, and regulation profile exported to partner's VR environment. Child's avatar appears in social skills scenarios calibrated by their real-world regulation data. Requires Ray-Ban Meta Display ($799) or Meta Quest. Meta Wearables Device Access Toolkit SDK for glasses integration. GA publishing expected 2026.",
+    cite:"Sources: Meta Wearables Developer FAQ (Dec 2025). Floreo VR ($40/mo autism social skills). Prov F claims."
+  },
+  {
+    icon:"📱",name:"Parent Companion App",type:"service",typeName:"Service Partner",
+    desc:"Consumer-facing parent dashboard and coaching. Weekly regulation summaries, milestone celebrations, therapist communication portal.",
+    rev:"Included in consumer subscription ($149–$249/yr). Partner develops under contract or revenue share.",
+    detail:"Integration point: Analytics Layer API. Aggregate session data (no raw biometrics) presented in parent-friendly format. VoiceGrow avatar stage visible to parent. IEP goal progress displayed in non-clinical language. Push notifications for milestones (\"Brooks stayed in range 80% of the day today!\"). COPPA compliance required for any child-linked data.",
+    cite:"Source: Sensory Bridges consumer pricing model. COPPA 16 CFR Part 312."
+  },
+  {
+    icon:"🏥",name:"Medicaid Billing Intermediary",type:"service",typeName:"Service Partner",
+    desc:"School-based Medicaid billing services. Partner handles claims submission using documentation auto-generated by Brooks Band platform.",
+    rev:"Per-claim fee to district (not to Sensory Bridges). Platform value: increases billable sessions → increases platform stickiness.",
+    detail:"Integration point: Documentation Layer export API. Session notes, CPT code-aligned records, and HCBS waiver-formatted documentation exported in partner's required format. Partner submits claims to TennCare MCOs on behalf of the district. Sensory Bridges does NOT bill Medicaid directly and does NOT touch claims money. Value: platform generates the documentation that enables billing, making it indispensable to districts.",
+    cite:"Sources: TennCare Billing Manual (Sep 2025). CMS SBS Guide (Mar 2024). CMS TAC deadline Jul 1, 2026."
+  },
+  {
+    icon:"📚",name:"Training & Certification",type:"service",typeName:"Service Partner",
+    desc:"Professional development for SLPs, OTs, and educators on Brooks Band deployment. Certification program. (NE Low Vision model applied to assistive tech.)",
+    rev:"Revenue share: 20% of training fees to Sensory Bridges. Partner charges $150–$500 per training session.",
+    detail:"Integration point: Not a technical API integration — this is a service partnership. Partner provides personalized setup, configuration training, and ongoing professional development. Modeled after NE Low Vision's Ray-Ban Meta training program ($150+ per session). Sensory Bridges provides training materials, certification curriculum, and approved partner listing on website. Creates an ecosystem of certified deployment specialists who sell the platform for you.",
+    cite:"Source: NE Low Vision Ray-Ban Meta training program (nelowvision.com). Meta partner ecosystem model."
+  },
+];
+
+const pContainer = document.getElementById('partners');
+partners.forEach((p,i) => {
+  const slot = document.createElement('div');
+  slot.className = 'eco-slot';
+  slot.onclick = function(){ this.classList.toggle('open') };
+  slot.innerHTML = `
+    <div class="eco-icon">${p.icon}</div>
+    <div class="eco-name">${p.name}</div>
+    <span class="eco-type ${p.type}">${p.typeName}</span>
+    <div class="eco-desc">${p.desc}</div>
+    <div class="eco-rev">${p.rev}</div>
+    <div class="eco-detail">
+      <p><strong style="color:var(--teal-glow)">How they plug in:</strong></p>
+      <p>${p.detail}</p>
+      <div class="cite">${p.cite}</div>
+    </div>
+  `;
+  pContainer.appendChild(slot);
+});
+
+// === FINANCIAL DATA ===
+const financials = [
+  {
+    title: "Hardware Revenue (Device Sales)",
+    total: "$249–$279 per unit",
+    rows: [
+      ["Galaxy Watch 8 40mm (BT)", "School SKU", "$349", "$249", "-$100 loss", "Subsidized by platform sub"],
+      ["Galaxy Watch 8 44mm (LTE)", "School + LTE", "$399", "$279", "-$120 loss", "Knox Freestanding requires LTE"],
+      ["BrooksClip™ prototype", "UTC R&D", "[TBD]", "Bundled", "—", "Included with device in pilot"],
+      ["Consumer bundle (watch + clip)", "Direct", "$349+", "$279", "[TBD]", "Consumer margin improves at scale"],
+    ],
+    headers: ["Item", "SKU", "Samsung Cost", "Sell Price", "Margin", "Notes"],
+    note: "Phase 1 hardware margin is negative. This is intentional — hardware is the distribution vehicle for the platform subscription, which is the recurring revenue driver. Comparable model: Revibe sells Galaxy Watch 7 for $199 and charges subscription on top. Source: Samsung.com pricing July 2025."
+  },
+  {
+    title: "Platform Subscription Revenue (Recurring)",
+    total: "Primary revenue driver",
+    rows: [
+      ["School Purchase Tier", "$59/student/yr", "50 students", "$2,950/yr", "~85% margin", "District buys device outright"],
+      ["School Managed Rental", "$99/student/yr", "50 students", "$4,950/yr", "~75% margin", "Includes device lease + support"],
+      ["School 3-Year Lease", "$79/student/yr", "50 students", "$3,950/yr", "~80% margin", "Lower rate, longer commitment"],
+      ["Consumer Subscription", "$149–$249/yr", "Per user", "$149–$249", "~90% margin", "App + dashboard + avatar"],
+    ],
+    headers: ["Tier", "Price", "Unit", "Annual Rev", "Gross Margin", "Notes"],
+    note: "Platform hosting cost: $500–$2K/mo at pilot scale. Customer acquisition cost at pilot: near-zero (waitlist-driven). SaaS gross margins in education vertical average 70–85%. Source: Sensory Bridges business model (sensorybridges.com/business-model)."
+  },
+  {
+    title: "Consulting & Pilot Revenue (2026)",
+    total: "~$27K in 2026",
+    rows: [
+      ["Paid pilot flat fee", "$1,500/site", "5 sites", "$7,500", "100%", "No hardware COGS in pilot fee"],
+      ["Consulting engagements", "$3,000/district", "3 districts", "$9,000", "100%", "AT assessment + deployment planning"],
+      ["Private clinic pilots", "$2,500/clinic", "2 clinics", "$5,000", "100%", "SLP/OT practice deployments"],
+      ["Conference speaking", "$1,500/event", "2 events", "$3,000", "100%", "Paid speaking at AT conferences"],
+      ["Grant-funded R&D", "Variable", "—", "$2,500+", "—", "UTC partnership deliverables"],
+    ],
+    headers: ["Stream", "Price", "Volume", "2026 Rev", "Margin", "Notes"],
+    note: "Consulting revenue is 100% margin (founder's time). This revenue stream scales only with team growth. It is a bridge to recurring platform subscription revenue in 2027."
+  },
+  {
+    title: "Partner Ecosystem Revenue (2027+)",
+    total: "[TBD — Projections]",
+    rows: [
+      ["Clinical integration rev share", "20% of partner sub", "2 partners @ $29/mo × 50 clinicians", "$6,960/yr", "~95%", "Pure software margin"],
+      ["Content marketplace rev share", "30% of content sales", "500 challenge packs sold @ $5 avg", "$750/yr", "~95%", "Year 1 marketplace only"],
+      ["Training certification rev share", "20% of training fees", "100 sessions @ $250 avg", "$5,000/yr", "~95%", "NE Low Vision model"],
+      ["IEP platform licensing", "$5K–$15K/partner/yr", "1 integration partner", "$5,000–$15,000/yr", "~95%", "Enterprise data partnership"],
+      ["AR/VR therapy rev share", "15% of partner sub", "[TBD — Phase 2]", "[TBD]", "~95%", "Requires VoiceGrow in production"],
+    ],
+    headers: ["Stream", "Rate", "Estimated Volume (Yr 1)", "Projected Rev", "Margin", "Notes"],
+    note: "Partner revenue is high-margin because Sensory Bridges provides the API infrastructure that already exists as part of the core platform. Incremental cost of supporting a partner integration is near zero. Revenue share rates benchmarked against Apple App Store (30%), Meta (0% — hardware-funded model), and Microsoft Marketplace (3% agency fee). Our 15–20% rate is competitive for a niche vertical platform. Source: Canalys SaaS 100 Ecosystems (2025)."
+  },
+  {
+    title: "Year-by-Year Revenue Summary",
+    total: "$27K → $112K → $620K → $2M+",
+    rows: [
+      ["2026 (Pilot Year)", "$7,500", "$0", "$19,500", "$0", "$27,000"],
+      ["2027 (Year 1 Commercial)", "$25,000", "$62,000", "$10,000", "$15,000", "$112,000"],
+      ["2028 (Year 2 Growth)", "$75,000", "$420,000", "$25,000", "$100,000", "$620,000"],
+      ["2029 (Platform + FDA)", "$200,000", "$1,200,000", "$50,000", "$550,000", "$2,000,000+"],
+    ],
+    headers: ["Year", "Hardware", "Platform Subs", "Consulting", "Partner + Other", "Total"],
+    note: "2026 is a validation year, not a revenue business. 2027 converts pilot schools to paying platform subscribers. 2028 adds consumer SKU and partner ecosystem. 2029 assumes FDA Pre-Sub completed and proprietary hardware in development. All figures are projections based on current pipeline (150+ waitlist, 5 pilot sites confirmed, 300+ discovery interviews). Source: Sensory Bridges financial projections."
+  },
+];
+
+const fContainer = document.getElementById('financials');
+financials.forEach((f,i) => {
+  const card = document.createElement('div');
+  card.className = 'fin-card';
+  card.innerHTML = `
+    <div class="fin-header" onclick="this.parentElement.classList.toggle('open')">
+      <h4>${f.title}</h4>
+      <div style="display:flex;align-items:center;gap:12px">
+        <span class="fin-total">${f.total}</span>
+        <span class="fin-toggle">▼</span>
+      </div>
+    </div>
+    <div class="fin-body">
+      <div class="fin-inner">
+        <table class="fin-table">
+          <thead><tr>${f.headers.map(h=>`<th>${h}</th>`).join('')}</tr></thead>
+          <tbody>
+            ${f.rows.map((r,ri) => `<tr class="${ri === f.rows.length-1 && f.rows.length > 3 ? 'highlight' : ''}">${r.map(c=>`<td>${c}</td>`).join('')}</tr>`).join('')}
+          </tbody>
+        </table>
+        <div class="fin-note">${f.note}</div>
+      </div>
+    </div>
+  `;
+  fContainer.appendChild(card);
+});
+</script>
+
+
+</body><div id="aiFabShadowRoot" data-fab-type="react" style="opacity: 1;"><template shadowrootmode="open"><div id="fab-react-root"><div class="fab-root"><div class="acrobat-button-container " style="bottom: 36px;"><div class="acrobat-button " role="button" aria-label="Get summaries and key insights using AI Assistant"><button class="close-btn  "><svg class="close-icon" width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg"><mask id="mask0_8552_7892" maskUnits="userSpaceOnUse" x="0" y="0" width="14" height="14" style="mask-type: alpha;"><path d="M7.82482 7.00034L10.6374 4.18778C10.7893 4.03592 10.7893 3.78969 10.6374 3.63783L10.3625 3.36292C10.2106 3.21106 9.96446 3.21106 9.81255 3.36292L6.99995 6.17548L4.18734 3.36292C4.03543 3.21106 3.78933 3.21106 3.63743 3.36292L3.36247 3.63783C3.21056 3.78969 3.21056 4.03592 3.36247 4.18778L6.17507 7.00034L3.36247 9.81295C3.21056 9.96481 3.21056 10.2111 3.36247 10.3629L3.63743 10.6378C3.78933 10.7897 4.03543 10.7897 4.18734 10.6378L6.99995 7.82526L9.81255 10.6378C9.96446 10.7897 10.2106 10.7897 10.3625 10.6378L10.6374 10.3629C10.7893 10.2111 10.7893 9.96481 10.6374 9.81295L7.82482 7.00034Z" fill="#222222"></path></mask><g mask="url(#mask0_8552_7892)"><rect width="14" height="14"></rect></g></svg><svg class="burger-icon" width="21" height="17" viewBox="0 0 21 17" fill="none" xmlns="http://www.w3.org/2000/svg"><mask id="mask0_12188_28876" maskUnits="userSpaceOnUse" x="3" y="3" width="15" height="14" style="mask-type: alpha;"><path d="M15.1285 12.8008H6.37852C6.08867 12.8008 5.85352 13.0359 5.85352 13.3258C5.85352 13.6156 6.08867 13.8508 6.37852 13.8508H15.1285C15.4184 13.8508 15.6535 13.6156 15.6535 13.3258C15.6535 13.0359 15.4184 12.8008 15.1285 12.8008Z" fill="#292929"></path><path d="M6.37852 6.85078H15.1285C15.4184 6.85078 15.6535 6.61562 15.6535 6.32578C15.6535 6.03594 15.4184 5.80078 15.1285 5.80078H6.37852C6.08867 5.80078 5.85352 6.03594 5.85352 6.32578C5.85352 6.61562 6.08867 6.85078 6.37852 6.85078Z" fill="#292929"></path><path d="M15.1285 9.30078H6.37852C6.08867 9.30078 5.85352 9.53594 5.85352 9.82578C5.85352 10.1156 6.08867 10.3508 6.37852 10.3508H15.1285C15.4184 10.3508 15.6535 10.1156 15.6535 9.82578C15.6535 9.53594 15.4184 9.30078 15.1285 9.30078Z" fill="#292929"></path></mask><g mask="url(#mask0_12188_28876)"><rect x="3.75391" y="3" width="14" height="14" fill="#464646"></rect></g></svg></button><div class="icon-container" role="button" tabindex="0" aria-label="Open AI Assistant"><svg id="ImportedIcons" xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 22 22" class="fab-svg-icon"><path d="m6.21661,16.39534c-1.35034,2.23499-2.67933,3.64758-3.45616,3.64758-.12795.00539-.25276-.04056-.34667-.12762-.14818-.12483-.21629-.32065-.17758-.5105.14764-.80079,1.68628-1.95576,3.98041-3.00946Zm6.49075-3.19656c-.57993.12528-1.1792.27056-1.78689.43544-.4366.11893-.87951.24862-1.32255.38729.23541-.4949.4515-.98554.6398-1.452.24831-.6159.48156-1.232.69564-1.83456.18831.30354.38304.59839.58195.88207.39375.56092.81787,1.09736,1.19205,1.58176Zm-2.99822-10.63684c.08814-.18001.26644-.29855.46653-.31016.51149,0,.62276.63358.62276,1.1638-.06787,1.25011-.29293,2.48669-.66988,3.68055-.85816-2.33642-.73831-3.97319-.41942-4.53419h.00001Zm9.60883,12.20974c-.13359.4402-.56725.71808-1.023.6555-.15594-.00061-.3112-.02054-.46224-.05933-1.07834-.28263-2.07953-.80363-2.92976-1.5246.71719-.11267,1.44198-.17001,2.16797-.17149.48402-.00813.96771.03017,1.44442.11438.43447.09244.92449.33873.80261.98554Zm1.45515-1.0537c-1.01837-.83309-2.33117-1.21735-3.63802-1.06487-.98482.00983-1.96732.09739-2.93836.26187-.62354-.62512-1.19003-1.30467-1.69272-2.03054-.38314-.54455-.73672-1.10931-1.05923-1.69182.54287-1.57384.85986-3.2167.94151-4.87953,0-1.49369-.57564-3.09087-2.19132-3.09087-.56296.01952-1.07528.33036-1.35261.82066-.68906,1.2165-.41298,3.72002.68705,6.26756-.38306,1.17041-.80046,2.31007-1.31196,3.57265-.43687,1.08123-.93191,2.13803-1.48293,3.16579-1.64775.68213-5.15115,2.33642-5.48494,4.16456-.10306.53569.0783,1.08658.47942,1.45629.39145.35044.90217.53779,1.42737.5236,2.10998,0,4.21366-3.003,5.63044-5.58789.80461-.2816,1.62641-.53671,2.44391-.759.8967-.24407,1.76345-.44427,2.58082-.594,1.39014,1.39224,3.25004,2.21523,5.21531,2.30773,1.36751,0,1.87887-.60942,2.06516-1.122.20733-.5893.08589-1.24438-.3189-1.72019Z" fill="var(--iconRed, #d31510)" fill-rule="evenodd"></path></svg></div></div><div class="draggable-handle "><svg width="14" height="15" viewBox="0 0 14 15" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M4.60039 13.0699C5.26313 13.0699 5.80039 12.5327 5.80039 11.8699C5.80039 11.2072 5.26313 10.6699 4.60039 10.6699C3.93765 10.6699 3.40039 11.2072 3.40039 11.8699C3.40039 12.5327 3.93765 13.0699 4.60039 13.0699Z" fill="#292929"></path><path d="M4.60039 8.27109C5.26313 8.27109 5.80039 7.73384 5.80039 7.07109C5.80039 6.40835 5.26313 5.87109 4.60039 5.87109C3.93765 5.87109 3.40039 6.40835 3.40039 7.07109C3.40039 7.73384 3.93765 8.27109 4.60039 8.27109Z" fill="#292929"></path><path d="M4.60039 3.47031C5.26313 3.47031 5.80039 2.93305 5.80039 2.27031C5.80039 1.60757 5.26313 1.07031 4.60039 1.07031C3.93765 1.07031 3.40039 1.60757 3.40039 2.27031C3.40039 2.93305 3.93765 3.47031 4.60039 3.47031Z" fill="#292929"></path><path d="M9.4002 13.0699C10.0629 13.0699 10.6002 12.5327 10.6002 11.8699C10.6002 11.2072 10.0629 10.6699 9.4002 10.6699C8.73745 10.6699 8.2002 11.2072 8.2002 11.8699C8.2002 12.5327 8.73745 13.0699 9.4002 13.0699Z" fill="#292929"></path><path d="M9.4002 8.27109C10.0629 8.27109 10.6002 7.73384 10.6002 7.07109C10.6002 6.40835 10.0629 5.87109 9.4002 5.87109C8.73745 5.87109 8.2002 6.40835 8.2002 7.07109C8.2002 7.73384 8.73745 8.27109 9.4002 8.27109Z" fill="#292929"></path><path d="M9.4002 3.47031C10.0629 3.47031 10.6002 2.93305 10.6002 2.27031C10.6002 1.60757 10.0629 1.07031 9.4002 1.07031C8.73745 1.07031 8.2002 1.60757 8.2002 2.27031C8.2002 2.93305 8.73745 3.47031 9.4002 3.47031Z" fill="#292929"></path></svg></div></div></div></div><style>
+    .acrobat-button-container {
+        position: fixed;
+        right: 0;
+        bottom: 36px;
+        z-index: 2147483646;
+        visibility: visible !important;
+        pointer-events: all;
+        opacity: 1;
+        display: flex;
+        align-items: center;
+        transition: opacity 0.3s ease-in-out;
+    }
+
+    @media print {
+        .acrobat-button-container {
+            display: none !important;
+        }
+    }
+
+    .acrobat-button {
+        position: relative;
+        background: white;
+        display: flex;
+        align-items: center;
+        pointer-events: all;
+        touch-action: none;
+        box-shadow: 0px 2px 8px 0px #00000029;
+        height: 34px;
+        width: 34px;
+        border: 1px solid transparent;
+        background-clip: padding-box, border-box;
+        background-origin: border-box;
+        background-image: linear-gradient(white, white),
+                        linear-gradient(95.85deg, #D73220 0%, #D92361 33%, #7155FA 100%);
+        border-radius: 18px;
+        justify-content: right;
+        margin-right: var(--fab-margin-right, 28px);
+        overflow: hidden;
+    }
+
+    .acrobat-button-container-transparent {
+        opacity: 0.4 !important;
+        transition: opacity 0.3s ease-in-out;
+    }
+
+    .acrobat-button-container-transparent:hover,
+    .acrobat-button-container-transparent:focus,
+    .acrobat-button-container-transparent:active {
+        opacity: 1;
+    }
+
+    .acrobat-button > svg {
+        flex-shrink: 0;
+        margin: 4px 5px 5px 5px;
+        width: 22px;
+        height: 22px;
+        pointer-events: none;
+        fill: #b40000;
+    }
+    .acrobat-button:has(.close-btn.open),
+    .expand-acrobat-button {
+        width: 64px;
+    }
+
+    .disabled {
+        background: #B1B1B1;
+    }
+
+    .tooltip-text {
+        width: 160px;
+        visibility: hidden;
+        opacity: 0;
+        background-color: #FFFFFF;
+        color: #292929;
+        border-radius: 7px;
+        padding: 4px 1px 5px 9px;
+        position: absolute;
+        z-index: 1;
+        right: 100%;
+        top: 50%;
+        transform: translateY(-50%);
+        margin-right: 10px;
+        transition: opacity 0.3s, visibility 0s linear 2s;
+        font-size: 12px;
+        line-height: 15px;
+        font-family: 'adobe-clean', Adobe Clean, sans-serif;
+        filter: drop-shadow(0px 1px 6px rgba(0, 0, 0, 0.12));
+    }
+
+    .tooltip-text::after {
+       content: '';
+       position: absolute;
+       top: 50%;
+       left: 100%;
+       transform: translateY(-50%);
+       border-width: 6px;
+       border-style: solid;
+       border-color: transparent transparent transparent #fff;
+    }
+
+    .show-tooltip {
+        visibility: visible;
+        opacity: 1;
+        line-height: 1.5;
+        font-family: 'adobe-clean', Adobe Clean, sans-serif;
+        transition: opacity 0.3s;
+        transition-delay: 500ms;
+    }
+
+    .close-btn {
+        position: relative;
+        display: none;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .close-btn svg {
+        fill: #464646;
+    }
+
+    .close-btn.showCloseButton {
+        opacity: 1;
+        display: flex;
+        justify-content: center;
+        width: 24px;
+        height: 24px;
+        padding: 2px;
+    }
+
+    .fab-view-settings-dialog {
+        display: none;
+        position: absolute;
+        bottom: 40px;
+        z-index: 1;
+    }
+
+    .close-btn:hover {
+        background: #E6E6E6;
+        border-radius: 50%; /* Keep original circular hover */
+        cursor: pointer;
+    }
+
+    .fab-view-settings-dialog.showDialog {
+        display: block;
+    }
+    .close-btn .burger-icon {
+        display: inline;
+        margin-bottom: 2px;
+    }
+    .close-btn .close-icon {
+        display: none;
+    }
+    .close-btn.open .burger-icon {
+        display: none;
+    }
+    .close-btn.open .close-icon {
+        display: inline;
+    }
+    .tooltip-text .tooltip-text-content {
+        font-weight: bold;
+    }
+    .tooltip-text .tooltip-sub-text-text {
+        font-style: italic;
+        font-size: 11px;
+    }
+
+    /* Icon container styles - replaces iframe */
+    .icon-container {
+        width: 33px;
+        height: 34px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: grab;
+        pointer-events: all;
+        flex-shrink: 0;
+        background: transparent;
+        border: none;
+    }
+
+    .icon-container:active {
+        cursor: grabbing;
+    }
+
+    .fab-svg-icon {
+        width: 22px;
+        height: 22px;
+        padding: 5px 5px 5px 6px;
+        pointer-events: none;
+        fill: #b40000;
+    }
+
+    .draggable-handle {
+        display: none;
+        position: absolute;
+        right: var(--drag-handle-right, 12px);
+        cursor: grab;
+    }
+    .draggable-handle-visible {
+        display: flex;
+    }
+
+    /* Font face declarations - for proper font loading in Shadow DOM */
+    @font-face {
+        font-family: 'adobe-clean';
+        font-weight: 400;
+        src: url('chrome-extension://efaidnbmnnnibpcajpcglclefindmkaj/browser/css/fonts/AdobeClean-Regular.otf') format('opentype');
+    }
+    @font-face {
+        font-family: 'adobe-clean';
+        font-weight: 700;
+        src: url('chrome-extension://efaidnbmnnnibpcajpcglclefindmkaj/browser/css/fonts/AdobeClean-Bold.otf') format('opentype');
+    }
+    @font-face {
+        font-family: 'AdobeClean-Regular';
+        src: url('chrome-extension://efaidnbmnnnibpcajpcglclefindmkaj/browser/css/fonts/AdobeClean-Regular.otf') format('opentype');
+    }
+    @font-face {
+        font-family: 'AdobeClean-Bold';
+        src: url('chrome-extension://efaidnbmnnnibpcajpcglclefindmkaj/browser/css/fonts/AdobeClean-Bold.otf') format('opentype');
+    }
+    body {
+        font-family: 'AdobeClean-Regular', adobe-clean, "Adobe Clean", sans-serif;
+    }
+
+    .dialog-container {
+        width: 166px;
+        background-color: #ffffff;
+        border-radius: 4px;
+        border: 1px solid #B1B1B1;
+        box-shadow: 0px 1px 4px 0px #00000026;
+        z-index: 1000;
+        padding: 4px;
+        position: relative;
+        margin: 4px 0px;
+    }
+
+    .menu {
+        display: flex;
+        flex-direction: column;
+        gap: 4px;
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+    }
+
+    .menu .menu_item {
+        cursor: pointer;
+        font-family: 'AdobeClean-Regular', adobe-clean, "Adobe Clean", sans-serif;
+        align-content: center;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 18.2px;
+        text-align: left;
+        color: #222222;
+        padding: 0px 12px;
+        height: 32px;
+        width: 140px;
+    }
+
+    .menu .menu_item:hover {
+        background-color: #eaeaea;
+    }
+
+    .preferences {
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 18.2px;
+        text-align: left;
+        color: #464646;
+    }
+
+    .divider {
+        border-top: 1px solid #E6E6E6;
+    }
+
+    /* React-specific wrappers - minimal */
+    .fab-root {
+        font-family: 'adobe-clean', Adobe Clean, sans-serif;
+    }
+
+    button.close-btn {
+        background: transparent;
+        border: none;
+        cursor: pointer;
+        padding: 0;
+        z-index: 10; /* Ensure clickable above all other elements */
+        pointer-events: auto;
+    }
+
+    /* FAB Action Pills - From Figma Design */
+    .fab-pills-container {
+        position: absolute;
+        bottom: 42px; /* FAB height (34px) + gap (8px) = 42px */
+        right: var(--fab-margin-right, 28px);
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+        align-items: flex-end;
+        width: 142px;
+        z-index: 1;
+    }
+
+    .fab-pills-container.pills-below {
+        bottom: auto;
+        top: 42px; /* Same gap when positioned below */
+    }
+
+    /* Extend hover area using ::after pseudo-element - doesn't affect visual layout */
+    .fab-pills-container::after {
+        content: '';
+        position: absolute;
+        top: 100%; /* Start right after the pills content */
+        left: 0;
+        right: 0;
+        height: 8px;
+        background: transparent;
+        pointer-events: auto;
+    }
+
+    .fab-pills-container.pills-below::after {
+        top: auto;
+        bottom: 100%; /* Start right before the pills when positioned below */
+    }
+
+    /* FTE Header - First Time Experience (56px with close button) */
+    .fab-fte-header {
+        position: relative;
+        width: 142px;
+        min-height: 56px;
+        background: #FFFFFF;
+        border-radius: 12px;
+        box-shadow: 0px 4px 12px 0px rgba(0, 0, 0, 0.08), 0px 2px 6px 0px rgba(0, 0, 0, 0.04), 0px 0px 2px 0px rgba(0, 0, 0, 0.12);
+        overflow: hidden;
+        display: flex;
+        align-items: center;
+    }
+
+    .fab-fte-background {
+        position: absolute;
+        left: -13px;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 183.33px;
+        height: 126.82px;
+        background: url('chrome-extension://efaidnbmnnnibpcajpcglclefindmkaj/browser/images/fab-header-background.svg') no-repeat center;
+        background-size: cover;
+        pointer-events: none;
+        z-index: 0;
+    }
+
+    .fab-fte-close {
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 24px;
+        height: 24px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: transparent;
+        border: none;
+        cursor: pointer;
+        z-index: 2;
+        color: #222222;
+        padding: 0;
+    }
+
+    .fab-fte-close:hover {
+        background: rgba(0, 0, 0, 0.05);
+        border-radius: 12px;
+    }
+
+    .fab-fte-close svg {
+        width: 8px;
+        height: 8px;
+    }
+
+    .fab-fte-text {
+        position: relative;
+        width: 102px;
+        font-family: 'AdobeClean-Bold', adobe-clean, sans-serif;
+        font-weight: 400; /* Use Bold font file directly, not synthetic bold */
+        font-size: 12px;
+        line-height: 16px;
+        color: #222222; /* Figma spec color */
+        z-index: 1;
+        white-space: normal;
+        word-wrap: break-word;
+        margin-left: 16px;
+        margin-right: auto;
+        box-sizing: border-box;
+        -webkit-font-smoothing: subpixel-antialiased; /* Better font rendering */
+        -moz-osx-font-smoothing: auto;
+    }
+
+    /* Hover Header - Normal state (24px without close button) */
+    .fab-hover-header {
+        position: relative;
+        width: 142px;
+        min-height: 24px;
+        background: #FFFFFF; /* White background to show the colorful SVG and text */
+        border-radius: 12px;
+        box-shadow: 0px 4px 12px 0px rgba(0, 0, 0, 0.08), 0px 2px 6px 0px rgba(0, 0, 0, 0.04), 0px 0px 2px 0px rgba(0, 0, 0, 0.12);
+        overflow: hidden;
+        cursor: pointer;
+    }
+
+    .fab-hover-background {
+        position: absolute;
+        left: -27px;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 212.63px;
+        height: 147.09px;
+        background: url('chrome-extension://efaidnbmnnnibpcajpcglclefindmkaj/browser/images/fab-header-background.svg') no-repeat center;
+        background-size: cover;
+        pointer-events: none;
+        z-index: 0;
+    }
+
+    .fab-hover-text {
+        position: relative;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-family: 'AdobeClean-Bold', adobe-clean, sans-serif;
+        font-weight: 400; /* Use Bold font file directly, not synthetic bold */
+        font-size: 12px;
+        line-height: 15px;
+        color: #222222; /* Figma spec color */
+        z-index: 1;
+        white-space: normal;
+        padding: 4px 9px;
+        box-sizing: border-box;
+        -webkit-font-smoothing: subpixel-antialiased; /* Better font rendering */
+        -moz-osx-font-smoothing: auto;
+    }
+
+    /* Individual Pill Buttons */
+    .fab-pill-button {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 0;
+        width: 142px;
+        min-height: 24px; /* Min height, allows growth with content */
+        background: #FFFFFF;
+        border: none;
+        border-radius: 12px;
+        box-shadow: 0px 4px 12px 0px rgba(0, 0, 0, 0.08), 0px 2px 6px 0px rgba(0, 0, 0, 0.04), 0px 0px 2px 0px rgba(0, 0, 0, 0.12);
+        cursor: pointer;
+        padding: 0;
+        transition: background 0.2s ease;
+        overflow: visible;
+    }
+
+    .fab-pill-button:hover {
+        background: #D5D5D5;
+    }
+
+    .fab-pill-button:hover .fab-pill-label,
+    .fab-pill-button:hover .fab-pill-icon {
+        color: #000000; /* Hover state color from Figma Alias/content/neutral/hover */
+    }
+
+    .fab-pill-button:active {
+        background: #F4F4F4;
+    }
+
+    .fab-pill-icon {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 4px 7px 4px 10px; /* Exact Figma specs: top right bottom left */
+        flex-shrink: 0;
+        box-sizing: border-box;
+    }
+
+    .fab-pill-icon img {
+        width: 16px;
+        height: 16px;
+        display: block;
+        flex-shrink: 0;
+        /* SVG icons with currentColor fill will inherit color from parent */
+        filter: brightness(0) saturate(100%) invert(13%) sepia(0%) saturate(0%) hue-rotate(196deg) brightness(97%) contrast(97%); /* #222222 */
+    }
+
+    .fab-pill-button:hover .fab-pill-icon img {
+        filter: brightness(0) saturate(100%); /* #000000 on hover */
+    }
+
+    .fab-pill-label {
+        display: flex;
+        align-items: center;
+        font-family: 'AdobeClean-Bold', adobe-clean, sans-serif;
+        font-weight: 400; /* Use Bold font file directly, not synthetic bold */
+        font-size: 12px;
+        line-height: 15px; /* 1.252 * 12px = 15.024px */
+        color: #222222; /* Default text color from Figma Alias/content/neutral/default */
+        padding: 4px 9px 5px 0; /* Reduced right padding to prevent wrapping */
+        text-align: left;
+        white-space: normal; /* Allow text wrapping for multi-line content */
+        box-sizing: border-box;
+        flex: 1;
+        overflow: visible;
+        -webkit-font-smoothing: subpixel-antialiased; /* Better font rendering */
+        -moz-osx-font-smoothing: auto;
+    }
+</style></template></div></html>
